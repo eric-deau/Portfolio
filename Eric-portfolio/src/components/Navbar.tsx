@@ -1,39 +1,27 @@
-import React from 'react'
-import '../styles/Navbar.css'
+// import {useState} from 'react'
+// import { Link } from 'react-router-dom'
+// import NavLink from './Navlink'
+// import '../styles/Navbar.css'
 
-export default function Navbar() {
-    return (
-        <>
-            <nav className='nav'>
-                <div className='nav-logo'>
-                    <a href='/'>
-                        {/* <img src={reactLogo} alt='React Logo' />
-                        <img src={viteLogo} alt='Vite Logo' /> */}
-                    </a>
-                </div>
-                <ul className='nav-menu'>
-                    <li className='nav-item'>
-                        <a href='/' className='nav-link'>
-                            Home
-                        </a>
-                    </li>
-                    <li className='nav-item'>
-                        <a href='/about' className='nav-link'>
-                            About
-                        </a>
-                    </li>
-                    <li className='nav-item'>
-                        <a href='/projects' className='nav-link'>
-                            Projects
-                        </a>
-                    </li>
-                    <li className='nav-item'>
-                        <a href='/contact' className='nav-link'>
-                            Contact
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </>
-    )
-}
+// interface NavBarProps {
+//     navItems: { to: string, title: string }[];
+// }
+
+// export default function Navbar({navItems}: NavBarProps) {
+//     return (
+//         <>
+//            <nav className="nav">
+//             {/* <Link to="/" className="nav__logo">Logo</Link> */}
+//                 <ul className="nav__links">
+//                     {navItems.map((link) => (
+//                         <NavLink to={link.to} title={link.title} />
+//                     ))}
+//                 {/* <NavLink to="/" title="Home" />
+//                 <NavLink to="/contact" title="Contact" />
+//                 <NavLink to="/register" title="Register" />
+//                 <NavLink to="/leaderboard" title="Leaderboard" /> */}
+//             </ul>
+//         </nav>
+//         </>
+//     )
+// }
