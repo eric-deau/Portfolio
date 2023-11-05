@@ -24,7 +24,8 @@ export default function Navbar({ navItems }: NavBarProps) {
     
     return (
         <>
-            <nav className="nav">
+            {/* nav css class breaks when burger menu is open */}
+            <div className="nav">
                 <Link to="/" className="nav__logo"><NavbarLogo></NavbarLogo></Link>
                 <div className="menu-visible">
                     <ul className="links">
@@ -45,7 +46,7 @@ export default function Navbar({ navItems }: NavBarProps) {
                         ))}
                     </Menu>
                 </div>
-            </nav>
+            </div>
         </>
     )
 }
