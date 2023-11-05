@@ -4,7 +4,7 @@ interface Props {}
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <div>About</div>
   )
 }
 
