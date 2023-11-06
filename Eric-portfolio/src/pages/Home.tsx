@@ -1,10 +1,15 @@
 import React from 'react'
+import WelcomeMessage from '../components/WelcomeMessage';
+import '../styles/home.css'
 
-interface Props {}
+
+interface Props { }
 
 const Home = (props: Props) => {
   return (
-    <div>Home</div>
+    <div className="welcome-message">
+      <WelcomeMessage></WelcomeMessage>
+    </div>
   )
 }
 
