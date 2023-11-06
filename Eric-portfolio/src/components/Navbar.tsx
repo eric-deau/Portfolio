@@ -1,9 +1,9 @@
-import {useState} from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import NavLink from './Navlink'
 import BurgerNavlink from './BurgerNavlink'
 import NavbarLogo from './NavbarLogo'
-import {slide as Menu} from 'react-burger-menu'
+import { slide as Menu } from 'react-burger-menu'
 import '../styles/Navbar.css'
 import '../styles/bm.css'
 
@@ -21,11 +21,11 @@ export default function Navbar({ navItems }: NavBarProps) {
     const closeMenu = () => {
         setMenuOpen(false)
     }
-    
+
     return (
         <>
             {/* nav css class breaks when burger menu is open */}
-            <div className="nav">
+            <nav className="navbar">
                 <Link to="/" className="nav__logo"><NavbarLogo></NavbarLogo></Link>
                 <div className="menu-visible">
                     <ul className="links">
@@ -40,13 +40,15 @@ export default function Navbar({ navItems }: NavBarProps) {
                             <BurgerNavlink key={link.title} to={link.to} title={link.title} />
                         ))}
                     </Menu> */}
-                    <Menu>
-                        {navItems.map((link) => (
-                            <BurgerNavlink key={link.title} to={link.to} title={link.title} />
-                        ))}
+                    <Menu right>
+                        <ul className="links">
+                            {navItems.map((link) => (
+                                <BurgerNavlink key={link.title} to={link.to} title={link.title} />
+                            ))}
+                        </ul>
                     </Menu>
                 </div>
-            </div>
+            </nav>
         </>
     )
 }

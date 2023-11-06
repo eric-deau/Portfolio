@@ -12,7 +12,7 @@ export default function Navlink({ to, title, ...restProps }: NavLinkProps) {
 
   return (
     <li className={isActive ? "active" : ""}>
-      <Link className="menu-items" to={to} {...restProps}>
+      <Link className="bm-item" to={to} {...restProps}>
         {title}
       </Link>
     </li>
